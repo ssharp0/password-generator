@@ -16,7 +16,7 @@
 <body>
 
  <!-- Container Start -->
- <div class="container">
+ <div class="container text-center">
 
   <!-- Header Start -->
   <header>
@@ -24,34 +24,47 @@
   </header>
   <!-- Header End -->
 
-  <!-- Content Start -->
-  <div class="content">
-   <h2>
-    Generate a Secure Password
-   </h2>
+  <!-- Content Start using card -->
+  <div class="card">
 
+   <!-- Card Header -->
+   <div class="card-header">
+    <h2>
+     Generate a Secure Password
+    </h2>
+   </div>
+
+   <!-- Card Body -->
+   <div class="card-body">
     <!-- Textarea to show Password Generation (readonly) -->
-   <textarea
-    readonly
-    name="password" 
-    id="password"
-    placeholder="Password"
-    aria-label="Generated Secure Password"
+    <textarea
+     readonly
+     name="password" 
+     id="password"
+     placeholder="Password"
+     aria-label="Generated Secure Password"
     ></textarea>
-  
+   </div>
+   
+   <!-- Card Footer -->
+   <div class="card-footer">
 
-   <!-- Div for Buttons-->
-   <div class="btn">
-    <!-- Generate Password Button -->
-    <button id="generateBtn">Click to Generate Password!</button>
-    <hr>
-    <!-- Copy to Clipboard Button -->
-    <button id="copyClip">Copy to Clipboard!</button>
+    <!-- Div for Buttons-->
+    <div class="btn">
+     <!-- Generate Password Button -->
+     <button id="generateBtn">Click to Generate Password!</button>
+     <hr>
+     <hr>
+     <!-- Copy to Clipboard Button -->
+     <button id="copyClip">Copy to Clipboard!</button>
+    </div>
    </div>
 
   </div>
+  <!-- Card End -->
 
  </div>
+ <!-- Container End -->
 
  
 
