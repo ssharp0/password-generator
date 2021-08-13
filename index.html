@@ -4,6 +4,10 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Google Fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300&display=swap" rel="stylesheet">
  <!-- Link to Reset css -->
  <link rel="stylesheet" href="./assets/reset.css">
  <!-- Bootstrap css -->
@@ -15,14 +19,13 @@
 </head>
 <body>
 
+ <!-- Page Start/Heading -->
+ <div class="jumbotron text-center">
+  <h1 class="display-1">Password Generator</h1>
+ </div>
+
  <!-- Container Start -->
  <div class="container text-center">
-
-  <!-- Header Start -->
-  <header>
-   <h1>Password Generator</h1>
-  </header>
-  <!-- Header End -->
 
   <!-- Content Start using card -->
   <div class="card">
@@ -52,12 +55,17 @@
     <!-- Div for Buttons-->
     <div class="btn">
      <!-- Generate Password Button -->
-     <button id="generateBtn">Click to Generate Password!</button>
-     <hr>
-     <hr>
-     <!-- Copy to Clipboard Button -->
-     <button id="copyClip">Copy to Clipboard!</button>
+     <button type="button" class="btn" id="generateBtn">Click to Generate Password!</button>
     </div>
+
+    <hr>
+    <hr>
+
+    <div class="btn">
+     <!-- Copy to Clipboard Button -->
+     <button type="button" class="btn" id="copyClip">Copy to Clipboard!</button>
+    </div>
+    
    </div>
 
   </div>
@@ -65,9 +73,6 @@
 
  </div>
  <!-- Container End -->
-
- 
-
 
  <!-- Boostrap JS -->
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
