@@ -13,10 +13,10 @@ The user will be asked for a password length between 8 and 128 characters and wi
 
 Once the length is provided, the user will confirm if they would like the random password to include any of the following:
 
-Lowercase Characters
-Uppercase Characters
-Numbers
-Special Characters
+- Lowercase Characters
+- Uppercase Characters
+- Numbers
+- Special Characters
 
 Once the user has confirmed the criteria, a random password will be generated that will include at least one character type that was confirmed by the user. 
 
