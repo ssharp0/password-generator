@@ -1,15 +1,15 @@
 # password-generator
-Password Generator to create random password based on user criteria
+Password Generator to create random password based on user criteria.
 
 The purpose of this application is to generate a random passsword based on user selected choices (numbers, special characters, upper/lowercase letters) - it runs in the browser and is powered by Javascript. 
 
-The user will select criteria and a randomly generated password will be provided on screen.
+The user will select criteria and a randomly generated password will be provided on screen based on their selected criteria.
 
-# Steps
+# Usage
 
 The user will click the generate password button and will be led through a series of prompts and confirmations on desired criteria. 
 
-The user will not be allowed to continue forward until a valid number between 8 and 128 is provided. 
+The user will be asked for a password length between 8 and 128 characters and will not be allowed to continue forward until a valid number between 8 and 128 is provided. 
 
 Once the length is provided, the user will confirm if they would like the random password to include any of the following:
 
@@ -24,3 +24,4 @@ The random password will show in the alert as well as on screen in the password 
 
 # Link to deployed application
 
+https://ssharp0.github.io/password-generator/ 
