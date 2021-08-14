@@ -1,32 +1,74 @@
-/* Add margin on top to give space at top of page between container */
+/* Add margin on top to give space at top of page between container - essentially header section */
 
 .jumbotron {
- margin-top: 2%;
+ margin-top: 1%;
+ padding: 20px;
 }
 
-.display-1 {
- font-weight: bold;
-}
-
-/* https://coolors.co/000f08-1c3738-4d4847-f4fff8-8baaad */
+/* Body styling - using google fonts for font */
 
 body {
- font-family: Arial, Helvetica, sans-serif;
- background-color: rgba(8, 8, 8, 0.274);
  font-family: 'Blinker', sans-serif;
+ background-color: rgba(8, 8, 8, 0.274);
+ margin: 0;
+ padding: 0;
 }
+
+/* Styling for the card section  */
 
 .card {
  background-color: #716867;
- color: white;
- padding: 5%;
- margin: 2%;
+ border-radius: 5px;
+ border-width: 1px;
+ box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+ color: hsl(206, 17%, 28%);
+ font-size: 18px;
+ margin: 0 auto;
+ max-width: 800px;
+ padding: 30px 40px;
 }
 
 .card-header {
  color: white;
  background-color: #716867;
 }
+
+.card-body {
+ min-height: 100px;
+}
+
+.card-footer {
+ background-color: #716867;
+ text-align: center;
+}
+
+/* styling for the button (generate password) */
+
+.btn {
+ border: none;
+ background-color: rgb(109, 50, 75);
+ border-radius: 25px;
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+ color: hsl(0, 0%, 100%);
+ display: inline-block;
+ font-size: 22px;
+ line-height: 22px;
+ margin: 16px 16px 16px 20px;
+ padding: 14px 34px;
+ text-align: center;
+ cursor: pointer;
+}
+
+button[disabled] {
+ cursor: default;
+ background: #c0c7cf;
+}
+
+.float-right {
+ float: right;
+}
+
+/* Styling for the password section (text area where password is generated */
 
 #password {
  text-align: center;
@@ -41,15 +83,7 @@ body {
  font-size: larger;
 }
 
-.card-footer {
- background-color: #716867;
-}
-
-.btn {
- background-color: rgb(109, 50, 75);
- color: white;
- margin: 0.5%;
-}
+/* Media query to help with sizing across devices as needed for the button */
 
 @media (max-width: 690px) {
  .btn {
